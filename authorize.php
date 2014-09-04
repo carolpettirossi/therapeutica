@@ -19,7 +19,6 @@
  * system in modules/system/system.module. For more information, see:
  * @link authorize Authorized operation helper functions @endlink
  */
-
 /**
  * Defines the root directory of the Drupal installation.
  */

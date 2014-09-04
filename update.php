@@ -509,3 +509,4 @@ if (isset($output) && $output) {
   $progress_page = ($batch = batch_get()) && isset($batch['running']);
   print theme('update_page', array('content' => $output, 'show_messages' => !$progress_page));
 }
+
