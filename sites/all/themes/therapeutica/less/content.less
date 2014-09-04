@@ -1,0 +1,377 @@
+
+@import 'variables.less';
+
+h1 {
+  .title;
+}
+
+#content {
+  .container {
+    width: @content_width;
+    height: auto;
+  }
+}
+
+body.page-servicos-em-saude,
+body.page-especialidades  {
+
+  .region-content {
+    overflow: hidden;
+
+    .block-text-resize {
+      position: absolute;
+      bottom: 28px;
+      left: 130px;
+
+      h2 {
+        display: none;
+      }
+    }
+  }
+
+  #content {
+    overflow: hidden;
+    padding-bottom: 10px;
+    
+    .view-display-id-page {
+      overflow: hidden;
+    }
+
+    .menu {
+      float: left;
+      width: 290px;
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          background: url('../images/menu-servicos.png') 0 0;
+          height: 40px;
+          width: 250px;
+          display: block;
+          list-style: none;
+          .museo(16px,700);
+          color: @brown;
+          text-transform: uppercase;
+          line-height: 40px;
+          padding: 0 0 0 13px;
+          margin: 0 0 4px 0;
+
+          a {
+            cursor: pointer;
+
+            &.active {
+              color: @brown;
+            }
+          }
+
+          &.active,
+          &:hover {
+            background-position: 0 bottom;
+          }
+        }
+      }
+    }
+
+    .content-details {
+      float: left;
+      width: 654px;
+      border-left: 1px solid @gray;
+      padding-left: 27px;
+      margin: -13px 0 25px;
+      .sans-serif;
+      color: #4C4C4C;
+
+      .views-field-title {
+        display: none;
+      }
+
+      .back {
+        color: @gray;
+        float: right;
+        margin-top: 37px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+body.node-type-page {
+  #block-system-main {
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .field-name-body {
+    float: right;
+    width: 670px;
+    border-left: 1px solid @gray;
+    padding: 0 0 30px 21px;
+    .sans-serif;
+    color: #4c4c4c;
+    min-height: 430px;
+
+    h2 {
+      .museo(21px, 500);
+      color: @brown;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+
+  #node-page-back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: @gray;
+    text-decoration: none;
+    .sans-serif;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .cite {
+    display: inline-block;
+    margin-bottom: 15px;
+
+
+    &#dra-tania {
+      img {
+        float: left;
+        margin-right: 15px;
+      }
+    }
+
+    &#dr-janio {
+      img {
+        float: right;
+        margin-left: 15px;
+      }
+    }
+    p {
+      display: table-cell;
+      height: 250px;
+      vertical-align: middle;
+    }
+  }
+
+  &.page-node-16 {
+    h1 {
+      background: url('../images/title_bkg_beneficio.png') 0 0 no-repeat;
+      text-indent: 25px;
+    }
+  }
+}
+
+body.page-node-17 {
+  .region-content {
+    overflow: hidden;
+  }
+
+  .field-name-body {
+    padding-right: 20px;
+    img {
+      border: 0;
+    }
+  }
+  #webform-client-form-17 {
+    border: 0; 
+    width: 480px;
+    padding: 0;
+
+    input, textarea, select {
+      width: 480px;
+    }
+
+    .form-managed-file {
+      margin-bottom: 20px;
+
+      input {
+        border: 0;
+        width: auto;
+        font-style: italic;
+      }
+
+      .form-submit {
+        border: 2px outset buttonface;
+        font-style: normal;
+        margin: 0 0 0 10px;
+        height: 22px;
+        background: buttonface;
+        color: buttontext;
+        font-weight: normal;
+        font-size: 13px;
+        float: none;
+      }
+    }
+
+    .form-submit {
+      width: 55px;
+      float: right;
+    }
+  }
+
+  #webform-ajax-wrapper-17 {
+    float: left;
+    width: 480px;
+
+    .messages {
+      width: 400px;
+      border: 0 !important;
+      padding: 5px 17px;
+    }
+
+    .ajax-progress  {
+      float: left;
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    .links {
+      display: none;
+    }
+
+    h2 {
+      .sans-serif(18px);
+    }
+
+    h3 {
+      .sans-serif(15px);
+    }
+  }
+
+  #block-system-main {
+    float: left;
+    padding: 0 0 0 17px;
+  }
+
+}
+
+#block-menu-menu-orcamento {
+  width: 287px;
+  float: left;
+  border-right: 1px solid @gray;
+  padding-right: 16px;
+  min-height: 510px;
+
+  .menu {
+    padding: 0;
+    margin: 0;
+
+    li {
+      background: url('../images/menu-orcamento.png') 0 0;
+      height: 40px;
+      width: 273px;
+      display: block;
+      list-style: none;
+      .museo(16px,700);
+      color: @brown;
+      text-transform: uppercase;
+      line-height: 40px;
+      padding: 0 0 0 13px;
+      margin: 0 0 4px 0;
+      cursor: pointer;
+
+      a {
+        cursor: pointer;
+        color: @brown;
+        text-decoration: none;
+
+        &.active {
+          color: @beige;
+        }
+      }
+
+      &.active-trail,
+      &:hover {
+        background-position: 0 bottom;
+
+        a {
+          color: @beige;
+        }
+      }
+
+    }
+  }
+}
+
+body.page-dra-tania-responde,
+body.page-node-20 {
+  .left-block {
+    float: left;
+    width: 289px;
+
+    img {
+      border: 1px solid @brown;
+    }
+
+    h2 {
+      .museo(14px, 700);
+      color: @brown;
+      margin: 15px 0 0;
+    }
+
+    #cargo {
+      .sans-serif(11px);
+      color: @brown;
+    }
+
+    #registro {
+      .museo(12px, 700);
+      color: @brown;
+      line-height: 18px;
+    }
+
+  }
+}
+
+body.page-dra-tania-responde {
+  .region-content {
+    overflow: hidden;
+    padding: 0 0 30px;
+  }
+
+  #block-system-main {
+    border-left: 1px solid @gray;
+    width: 650px;
+    float: left;
+    padding: 0 0 0 30px;
+
+    .views-row {
+      border-top: 1px solid @gray;
+      padding: 25px 0 10px;
+
+      &.views-row-first {
+        border-top: 0;
+      }
+    }
+
+    .field-content, .views-label {
+      .sans-serif(16px);
+      color: @dark_gray;
+    }
+
+    .views-label {
+      font-weight: bold;
+    }
+
+    .views-field-body {
+      margin-top: 16px;
+
+      .field-content {
+        p:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

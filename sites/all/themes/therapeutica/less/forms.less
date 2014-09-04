@@ -1,0 +1,313 @@
+
+@import 'variables.less';
+
+body.node-type-webform {
+  .messages {
+    background: none;
+    border: 0;
+    padding: 0 0 10px 40px;
+    float: left;
+    margin: 0;
+    width: 640px;
+    border-left: 1px solid #9a9c9f !important;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        .sans-serif(13px);
+      }
+    }
+  }
+}
+
+.node-webform {
+  padding-bottom: 40px;
+  position: relative;
+
+  .error {
+    border-color: #D80505 !important;
+  }
+
+  .sans-serif;
+
+  label {
+    color: @brown;
+
+    .form-required {
+      color: @brown;
+    }
+
+    &.error {
+      color: #D80505 !important;
+    }
+  }
+
+  .field-name-body {
+    float: left;
+    padding: 0 20px 0 0;
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      border: 1px solid @brown;
+    }
+  }
+
+
+  .webform-client-form {
+    float: left;
+    width: 663px;
+    border-left: 1px solid @gray;
+    padding-left: 27px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 650px;
+    height: 25px;
+    border: 2px solid @gray;
+    outline: none;
+  }
+
+  .form-submit,
+  #webform-component-voltar a{
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-style: normal !important;
+    color: @brown;
+    width: auto;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  #webform-component-voltar {
+    position: absolute;
+    right: 63px;
+    bottom: 39px;
+    border-right: 1px solid @gray;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: @gray;
+      font-weight: normal;
+      padding-right: 10px;
+      line-height: 25px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  #edit-actions {
+    .form-submit {
+      float: right;
+      outline: none;
+    }
+  }
+
+  .form-managed-file {
+    input {
+      border: 0;
+      width: auto;
+      font-style: italic;
+    }
+
+    .form-submit {
+      border: 2px outset buttonface;
+      font-style: normal;
+      margin: 0 0 0 10px;
+      height: 22px;
+      background: buttonface;
+      color: buttontext;
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  .grippie {
+    display: none;
+  }
+
+  #edit-submitted-anexar-curriculo-ajax-wrapper {
+    width: 620px;
+    float: left;
+
+    .form-item {
+      margin-top: 0;
+    }
+  }
+}
+
+.page-node-done {
+  .links {
+    display: none;
+  }
+
+  .webform-confirmation {
+    min-height: 490px;
+
+    .image {
+      float: left;
+      padding: 0 20px 0 0;
+
+      img {
+        border: 1px solid @brown;
+      }
+    }
+
+    .text {
+      display: table-cell;
+      vertical-align: middle;
+      width: 663px;
+      border-left: 1px solid @gray;
+      padding-left: 27px;
+      height: 450px;
+      text-align: center;
+
+      h2 {
+        .sans-serif(18px);
+      }
+
+      h3 {
+        .sans-serif(15px);
+      }
+    }
+  }
+}
+
+body.page-node-12 {
+  .messages {
+    width: 470px;
+    border-left: none !important;
+    padding: 0 18px;
+  }
+
+  .field-name-body {
+    float: right;
+    padding: 0;
+    text-align: right;
+    color: #4c4c4c;
+    .sans-serif(18px);
+
+    iframe {
+      margin: 18px 0 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4c4c4c;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #webform-client-form-12 {
+    width: 490px;
+    border-left: none;
+    border-right: none;
+    padding: 0 0;
+    margin-right: 25px;
+    position: relative;
+
+    input, 
+    select,
+    textarea {
+      width: 490px;
+    }
+
+    .form-submit {
+      width: 55px;
+      margin-top: 25px;
+      float: right;
+    }
+
+    textarea {
+      height: 144px;
+    }
+
+    #webform-component-voltar {
+      right: 60px;
+      bottom: 0;
+    }
+
+    #webform-component-telefone-ddd {
+      float: left;
+      margin-right: 10px;
+      margin-top: 0;
+
+      input {
+        margin-top: 19px;
+        width: 60px;
+      }
+    }
+
+    #webform-component-telefone {
+      float: left;
+      margin-top: 0;
+
+      label {
+        margin-left: -70px;
+      }
+      input {
+        width: 420px;
+      }
+    }
+  }
+
+  .webform-confirmation {
+    .map {
+      float: right;
+      text-align: right;
+      .sans-serif(18px);
+      color: #4c4c4c;
+
+      iframe {
+        margin: 0 0 10px;
+      }
+
+      a {
+        color: #4c4c4c;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      } 
+    }
+
+    div.message {
+      text-align: center;
+      height: 400px;
+      color: #4c4c4c;
+      display: table-cell;
+      vertical-align: middle;
+      width: 505px;
+
+      h2 {
+        .sans-serif(18px);
+      }
+
+      h3 {
+        .sans-serif(15px);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+name = "Nodequeue Extras"
+description = "Some extra special sauce for nodequeues"
+
+core = 7.x
+dependencies[] = nodequeue
+
+files[] = views/nodequeue_extras_handler_argument_subqueue_reference_phony.inc
+files[] = views/nodequeue_extras_handler_relationship_nodequeue.inc
+; Information added by drupal.org packaging script on 2012-03-18
+version = "7.x-1.0-alpha2"
+core = "7.x"
+project = "nodequeue_extras"
+datestamp = "1332040245"
+

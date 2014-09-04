@@ -1,0 +1,82 @@
+<?php
+function nodequeue_extras_contextual_links_view_alter(&$element, $items){
+  if ( !empty( $element['#element']['#contextual_links']['views_ui'] ) ){
+    //if this is a block placed by Context then the View info is stored in a slightly different place 
+    $views_info = (empty($element['#element']['#views_contextual_links_info']) ? $element['#element']['content']['#views_contextual_links_info'] : $element['#element']['#views_contextual_links_info']);
+    
+    $display_id = $views_info['views_ui']['view_display_id'];
+    $view_name = $views_info['views_ui']['view_name'];
+    $view = views_get_view($view_name,TRUE);
+    $view->build($display_id);
+    
+    /*
+     * Cycle through all the relationships to find ones provided by nodequeue
+     * We'll use this as a trigger to attach the links
+     */
+    foreach($view->relationship as $rel){
+      if(get_class($rel) == 'nodequeue_handler_relationship_nodequeue' || get_class($rel) == 'nodequeue_extras_handler_relationship_nodequeue'){
+        foreach($rel->options['names'] as $queue_name){
+          if(gettype($queue_name) == 'string'){
+            $qid_map = nodequeue_get_qid_map();
+            $qid = $qid_map[$queue_name];
+            $queue = nodequeue_load($qid);
+            $element['#links'][$queue_name] = array(
+              'title' => t('Edit queue: !queue_name', array('!queue_name' => $queue->title)),
+              'href' => 'admin/structure/nodequeue/'. $qid .'/view',
+              'query' => array('destination' => current_path()),
+            );
+            
+            /*
+             * Cycle through all arguments to find ones that limit us by subqueue
+             * If we find some, add further links to subqueues
+             */
+            foreach($view->argument as $arg){
+              if($arg->options['relationship'] == $rel->options['id'] && ($arg->definition['title'] == 'Subqueue reference' || $arg->definition['title'] == 'Subqueue reference (optional)')){
+                $subqueues = nodequeue_load_subqueues_by_reference(array($qid => $arg->value));
+                foreach($subqueues as $sqid => $subqueue){
+                  $element['#links'][$queue_name . '_'. $sqid] = array(
+                    'title' => t('Edit subqueue: !queue_name > !subqueue_title', array('!queue_name' => $queue->title, '!subqueue_title' => $subqueue->title)),
+                    'href' => 'admin/structure/nodequeue/'. $qid .'/view/'. $sqid,
+                    'query' => array('destination' => current_path()),
+                  );
+                }
+              }
+            }            
+          }
+        }
+      }
+    }
+  }
+}
+
+function nodequeue_extras_views_data_alter(&$data){
+  // placeholder argument that our relationship will use to add dynamic criteria to the relationship
+  $data['nodequeue_subqueue']['reference_phony'] = array(
+    'title' => t('Subqueue reference (optional)'),
+    'help' => t('Optional reference to define a subqueue; what this actually is depends upon the type of subqueue, but is a taxonomy tid for smartqueue taxonomy, or a uid for authorview. This handler must be paired with the Nodequeue Extras relationship handler.'),
+    'argument' => array(
+      'handler' => 'nodequeue_extras_handler_argument_subqueue_reference_phony',
+    ),
+  );
+
+  // queue relationship
+  $data['node']['nodequeue_extras_rel'] = array(
+    'group' => t('Nodequeue'),
+    'title' => t('Queue (Extras)'),
+    'help' => t('Create a relationship to a nodequeue.'),
+    'real field' => 'nid',
+    'relationship' => array(
+      'handler' => 'nodequeue_extras_handler_relationship_nodequeue',
+      'base' => 'nodequeue_nodes',
+      'field' => 'nid',
+      'label' => t('queue'),
+    ),
+  );
+}
+
+function nodequeue_extras_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'nodequeue_extras') . '/views',
+  );
+}

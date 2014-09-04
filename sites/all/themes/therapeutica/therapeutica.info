@@ -1,0 +1,24 @@
+name = Therapeutica
+description = The theme to customize all front end Therapeutica website.
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; Stylesheets
+stylesheets[all][] = less/variables.less
+stylesheets[all][] = less/general.less
+stylesheets[all][] = less/content.less
+stylesheets[all][] = less/forms.less
+stylesheets[all][] = less/products.less
+stylesheets[all][] = less/home.less
+
+; Scripts
+scripts[] = scripts/jcarousel.min.js
+scripts[] = scripts/general.js
+
+; Regions
+regions[top] = Top
+regions[header] = Header
+regions[banner] = Banner
+regions[content] = Content
+regions[footer] = Footer

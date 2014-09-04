@@ -1,0 +1,59 @@
+/*Colors*/
+@gray: #9A9C9F;
+@dark_gray: #4C4C4C;
+@brown: #934631;
+@beige: #EFCE9E;
+
+/**/
+@header_width: 940px;
+@content_width: 980px;
+@footer_width: 1015px;
+
+/*Fonts*/
+.museo(@size: 14px, @weight: 300, @style: normal) {
+  font-family: "museo";
+  font-weight: @weight;
+  font-style: @style;
+  font-size: @size;
+}
+
+.sans-serif(@size: 14px, @weight: normal, @style: normal) {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: @weight;
+  font-style: @style;
+  font-size: @size;
+}
+
+.myriad-bold(@size: 14px) {
+  font-family: "myriad-pro";
+  font-weight: 700;
+  font-style: normal;
+  font-size: @size;
+}
+
+.paralelogramo{
+  width: 209px;
+  height: 242px;
+  -webkit-transform: skew(-24deg);
+  -moz-transform: skew(-24deg);
+  -ms-transform: skew(-24deg);
+  -o-transform: skew(-24deg);
+  transform: skew(-24deg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 54px;
+}
+
+.title {
+  background: url('../images/title_bkg.png') center center no-repeat;
+  .museo(22px,700);
+  color: @beige;
+  text-transform: uppercase;
+  width: 968px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center; 
+}
