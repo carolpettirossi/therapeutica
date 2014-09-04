@@ -1,0 +1,31 @@
+/*Colors*/
+/**/
+/*Fonts*/
+.paralelogramo {
+  width: 209px;
+  height: 242px;
+  -webkit-transform: skew(-24deg);
+  -moz-transform: skew(-24deg);
+  -ms-transform: skew(-24deg);
+  -o-transform: skew(-24deg);
+  transform: skew(-24deg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 54px;
+}
+.title {
+  background: url(/sites/all/themes/therapeutica/images/title_bkg.png) center center no-repeat;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: #efce9e;
+  text-transform: uppercase;
+  width: 968px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}

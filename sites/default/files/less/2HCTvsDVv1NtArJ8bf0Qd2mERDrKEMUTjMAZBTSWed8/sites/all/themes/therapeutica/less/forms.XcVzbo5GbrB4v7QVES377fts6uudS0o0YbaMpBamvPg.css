@@ -1,0 +1,300 @@
+/*Colors*/
+/**/
+/*Fonts*/
+.paralelogramo {
+  width: 209px;
+  height: 242px;
+  -webkit-transform: skew(-24deg);
+  -moz-transform: skew(-24deg);
+  -ms-transform: skew(-24deg);
+  -o-transform: skew(-24deg);
+  transform: skew(-24deg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 54px;
+}
+.title {
+  background: url(/sites/all/themes/therapeutica/images/title_bkg.png) center center no-repeat;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: #efce9e;
+  text-transform: uppercase;
+  width: 968px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+body.node-type-webform .messages {
+  background: none;
+  border: 0;
+  padding: 0 0 10px 40px;
+  float: left;
+  margin: 0;
+  width: 640px;
+  border-left: 1px solid #9a9c9f !important;
+}
+body.node-type-webform .messages ul {
+  margin: 0;
+  padding: 0;
+}
+body.node-type-webform .messages ul li {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+}
+.node-webform {
+  padding-bottom: 40px;
+  position: relative;
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+.node-webform .error {
+  border-color: #D80505 !important;
+}
+.node-webform label {
+  color: #934631;
+}
+.node-webform label .form-required {
+  color: #934631;
+}
+.node-webform label.error {
+  color: #D80505 !important;
+}
+.node-webform .field-name-body {
+  float: left;
+  padding: 0 20px 0 0;
+}
+.node-webform .field-name-body p {
+  margin: 0;
+}
+.node-webform .field-name-body img {
+  border: 1px solid #934631;
+}
+.node-webform .webform-client-form {
+  float: left;
+  width: 663px;
+  border-left: 1px solid #9a9c9f;
+  padding-left: 27px;
+}
+.node-webform input,
+.node-webform textarea,
+.node-webform select {
+  width: 650px;
+  height: 25px;
+  border: 2px solid #9a9c9f;
+  outline: none;
+}
+.node-webform .form-submit,
+.node-webform #webform-component-voltar a {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-style: normal !important;
+  color: #934631;
+  width: auto;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+.node-webform #webform-component-voltar {
+  position: absolute;
+  right: 63px;
+  bottom: 39px;
+  border-right: 1px solid #9a9c9f;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+}
+.node-webform #webform-component-voltar a {
+  color: #9a9c9f;
+  font-weight: normal;
+  padding-right: 10px;
+  line-height: 25px;
+}
+.node-webform #webform-component-voltar p {
+  margin: 0;
+  padding: 0;
+}
+.node-webform #edit-actions .form-submit {
+  float: right;
+  outline: none;
+}
+.node-webform .form-managed-file input {
+  border: 0;
+  width: auto;
+  font-style: italic;
+}
+.node-webform .form-managed-file .form-submit {
+  border: 2px outset buttonface;
+  font-style: normal;
+  margin: 0 0 0 10px;
+  height: 22px;
+  background: buttonface;
+  color: buttontext;
+  font-weight: normal;
+  font-size: 13px;
+}
+.node-webform textarea {
+  height: 150px;
+  resize: none;
+}
+.node-webform .grippie {
+  display: none;
+}
+.node-webform #edit-submitted-anexar-curriculo-ajax-wrapper {
+  width: 620px;
+  float: left;
+}
+.node-webform #edit-submitted-anexar-curriculo-ajax-wrapper .form-item {
+  margin-top: 0;
+}
+.page-node-done .links {
+  display: none;
+}
+.page-node-done .webform-confirmation {
+  min-height: 490px;
+}
+.page-node-done .webform-confirmation .image {
+  float: left;
+  padding: 0 20px 0 0;
+}
+.page-node-done .webform-confirmation .image img {
+  border: 1px solid #934631;
+}
+.page-node-done .webform-confirmation .text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 663px;
+  border-left: 1px solid #9a9c9f;
+  padding-left: 27px;
+  height: 450px;
+  text-align: center;
+}
+.page-node-done .webform-confirmation .text h2 {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+.page-node-done .webform-confirmation .text h3 {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+body.page-node-12 .messages {
+  width: 470px;
+  border-left: none !important;
+  padding: 0 18px;
+}
+body.page-node-12 .field-name-body {
+  float: right;
+  padding: 0;
+  text-align: right;
+  color: #4c4c4c;
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+body.page-node-12 .field-name-body iframe {
+  margin: 18px 0 10px;
+}
+body.page-node-12 .field-name-body a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+body.page-node-12 .field-name-body a:hover {
+  text-decoration: underline;
+}
+body.page-node-12 #webform-client-form-12 {
+  width: 490px;
+  border-left: none;
+  border-right: none;
+  padding: 0 0;
+  margin-right: 25px;
+  position: relative;
+}
+body.page-node-12 #webform-client-form-12 input,
+body.page-node-12 #webform-client-form-12 select,
+body.page-node-12 #webform-client-form-12 textarea {
+  width: 490px;
+}
+body.page-node-12 #webform-client-form-12 .form-submit {
+  width: 55px;
+  margin-top: 25px;
+  float: right;
+}
+body.page-node-12 #webform-client-form-12 textarea {
+  height: 144px;
+}
+body.page-node-12 #webform-client-form-12 #webform-component-voltar {
+  right: 60px;
+  bottom: 0;
+}
+body.page-node-12 #webform-client-form-12 #webform-component-telefone-ddd {
+  float: left;
+  margin-right: 10px;
+  margin-top: 0;
+}
+body.page-node-12 #webform-client-form-12 #webform-component-telefone-ddd input {
+  margin-top: 19px;
+  width: 60px;
+}
+body.page-node-12 #webform-client-form-12 #webform-component-telefone {
+  float: left;
+  margin-top: 0;
+}
+body.page-node-12 #webform-client-form-12 #webform-component-telefone label {
+  margin-left: -70px;
+}
+body.page-node-12 #webform-client-form-12 #webform-component-telefone input {
+  width: 420px;
+}
+body.page-node-12 .webform-confirmation .map {
+  float: right;
+  text-align: right;
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: #4c4c4c;
+}
+body.page-node-12 .webform-confirmation .map iframe {
+  margin: 0 0 10px;
+}
+body.page-node-12 .webform-confirmation .map a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+body.page-node-12 .webform-confirmation .map a:hover {
+  text-decoration: underline;
+}
+body.page-node-12 .webform-confirmation div.message {
+  text-align: center;
+  height: 400px;
+  color: #4c4c4c;
+  display: table-cell;
+  vertical-align: middle;
+  width: 505px;
+}
+body.page-node-12 .webform-confirmation div.message h2 {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+body.page-node-12 .webform-confirmation div.message h3 {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}

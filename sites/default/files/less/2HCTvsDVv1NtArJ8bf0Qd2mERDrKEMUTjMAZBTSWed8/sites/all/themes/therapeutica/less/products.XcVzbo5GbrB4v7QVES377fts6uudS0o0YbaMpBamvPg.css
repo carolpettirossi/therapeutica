@@ -1,0 +1,65 @@
+/*Colors*/
+/**/
+/*Fonts*/
+.paralelogramo {
+  width: 209px;
+  height: 242px;
+  -webkit-transform: skew(-24deg);
+  -moz-transform: skew(-24deg);
+  -ms-transform: skew(-24deg);
+  -o-transform: skew(-24deg);
+  transform: skew(-24deg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 54px;
+}
+.title {
+  background: url(/sites/all/themes/therapeutica/images/title_bkg.png) center center no-repeat;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: #efce9e;
+  text-transform: uppercase;
+  width: 968px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+#block-views-produtos-block-1 {
+  float: left;
+  width: 290px;
+}
+#block-views-produtos-block-1 ul {
+  padding: 0;
+  margin: 0;
+}
+#block-views-produtos-block-1 ul li {
+  background: url(/sites/all/themes/therapeutica/images/menu-servicos.png) 0 0;
+  height: 40px;
+  width: 250px;
+  display: block;
+  list-style: none;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: #934631;
+  text-transform: uppercase;
+  line-height: 40px;
+  padding: 0 0 0 13px;
+  margin: 0 0 4px 0;
+}
+#block-views-produtos-block-1 ul li a {
+  cursor: pointer;
+}
+#block-views-produtos-block-1 ul li a.active {
+  color: #934631;
+}
+#block-views-produtos-block-1 ul li.active,
+#block-views-produtos-block-1 ul li:hover {
+  background-position: 0 bottom;
+}

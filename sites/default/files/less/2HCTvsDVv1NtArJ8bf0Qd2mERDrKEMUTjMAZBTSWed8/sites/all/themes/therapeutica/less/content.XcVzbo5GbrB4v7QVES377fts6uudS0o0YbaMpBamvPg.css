@@ -1,0 +1,391 @@
+/*Colors*/
+/**/
+/*Fonts*/
+.paralelogramo {
+  width: 209px;
+  height: 242px;
+  -webkit-transform: skew(-24deg);
+  -moz-transform: skew(-24deg);
+  -ms-transform: skew(-24deg);
+  -o-transform: skew(-24deg);
+  transform: skew(-24deg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 54px;
+}
+.title {
+  background: url(/sites/all/themes/therapeutica/images/title_bkg.png) center center no-repeat;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: #efce9e;
+  text-transform: uppercase;
+  width: 968px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+h1 {
+  background: url(/sites/all/themes/therapeutica/images/title_bkg.png) center center no-repeat;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: #efce9e;
+  text-transform: uppercase;
+  width: 968px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+#content .container {
+  width: 980px;
+  height: auto;
+}
+body.page-servicos-em-saude .region-content,
+body.page-especialidades .region-content {
+  overflow: hidden;
+}
+body.page-servicos-em-saude .region-content .block-text-resize,
+body.page-especialidades .region-content .block-text-resize {
+  position: absolute;
+  bottom: 28px;
+  left: 130px;
+}
+body.page-servicos-em-saude .region-content .block-text-resize h2,
+body.page-especialidades .region-content .block-text-resize h2 {
+  display: none;
+}
+body.page-servicos-em-saude #content,
+body.page-especialidades #content {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+body.page-servicos-em-saude #content .view-display-id-page,
+body.page-especialidades #content .view-display-id-page {
+  overflow: hidden;
+}
+body.page-servicos-em-saude #content .menu,
+body.page-especialidades #content .menu {
+  float: left;
+  width: 290px;
+}
+body.page-servicos-em-saude #content .menu ul,
+body.page-especialidades #content .menu ul {
+  padding: 0;
+  margin: 0;
+}
+body.page-servicos-em-saude #content .menu ul li,
+body.page-especialidades #content .menu ul li {
+  background: url(/sites/all/themes/therapeutica/images/menu-servicos.png) 0 0;
+  height: 40px;
+  width: 250px;
+  display: block;
+  list-style: none;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: #934631;
+  text-transform: uppercase;
+  line-height: 40px;
+  padding: 0 0 0 13px;
+  margin: 0 0 4px 0;
+}
+body.page-servicos-em-saude #content .menu ul li a,
+body.page-especialidades #content .menu ul li a {
+  cursor: pointer;
+}
+body.page-servicos-em-saude #content .menu ul li a.active,
+body.page-especialidades #content .menu ul li a.active {
+  color: #934631;
+}
+body.page-servicos-em-saude #content .menu ul li.active,
+body.page-especialidades #content .menu ul li.active,
+body.page-servicos-em-saude #content .menu ul li:hover,
+body.page-especialidades #content .menu ul li:hover {
+  background-position: 0 bottom;
+}
+body.page-servicos-em-saude #content .content-details,
+body.page-especialidades #content .content-details {
+  float: left;
+  width: 654px;
+  border-left: 1px solid #9a9c9f;
+  padding-left: 27px;
+  margin: -13px 0 25px;
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  color: #4C4C4C;
+}
+body.page-servicos-em-saude #content .content-details .views-field-title,
+body.page-especialidades #content .content-details .views-field-title {
+  display: none;
+}
+body.page-servicos-em-saude #content .content-details .back,
+body.page-especialidades #content .content-details .back {
+  color: #9a9c9f;
+  float: right;
+  margin-top: 37px;
+  text-decoration: none;
+}
+body.page-servicos-em-saude #content .content-details .back:hover,
+body.page-especialidades #content .content-details .back:hover {
+  text-decoration: underline;
+}
+body.node-type-page #block-system-main {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+body.node-type-page .field-name-body {
+  float: right;
+  width: 670px;
+  border-left: 1px solid #9a9c9f;
+  padding: 0 0 30px 21px;
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  color: #4c4c4c;
+  min-height: 430px;
+}
+body.node-type-page .field-name-body h2 {
+  font-family: "museo";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 21px;
+  color: #934631;
+  text-align: center;
+  margin-top: 5px;
+}
+body.node-type-page #node-page-back {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #9a9c9f;
+  text-decoration: none;
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+body.node-type-page #node-page-back:hover {
+  text-decoration: underline;
+}
+body.node-type-page .cite {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+body.node-type-page .cite#dra-tania img {
+  float: left;
+  margin-right: 15px;
+}
+body.node-type-page .cite#dr-janio img {
+  float: right;
+  margin-left: 15px;
+}
+body.node-type-page .cite p {
+  display: table-cell;
+  height: 250px;
+  vertical-align: middle;
+}
+body.node-type-page.page-node-16 h1 {
+  background: url(/sites/all/themes/therapeutica/images/title_bkg_beneficio.png) 0 0 no-repeat;
+  text-indent: 25px;
+}
+body.page-node-17 .region-content {
+  overflow: hidden;
+}
+body.page-node-17 .field-name-body {
+  padding-right: 20px;
+}
+body.page-node-17 .field-name-body img {
+  border: 0;
+}
+body.page-node-17 #webform-client-form-17 {
+  border: 0;
+  width: 480px;
+  padding: 0;
+}
+body.page-node-17 #webform-client-form-17 input,
+body.page-node-17 #webform-client-form-17 textarea,
+body.page-node-17 #webform-client-form-17 select {
+  width: 480px;
+}
+body.page-node-17 #webform-client-form-17 .form-managed-file {
+  margin-bottom: 20px;
+}
+body.page-node-17 #webform-client-form-17 .form-managed-file input {
+  border: 0;
+  width: auto;
+  font-style: italic;
+}
+body.page-node-17 #webform-client-form-17 .form-managed-file .form-submit {
+  border: 2px outset buttonface;
+  font-style: normal;
+  margin: 0 0 0 10px;
+  height: 22px;
+  background: buttonface;
+  color: buttontext;
+  font-weight: normal;
+  font-size: 13px;
+  float: none;
+}
+body.page-node-17 #webform-client-form-17 .form-submit {
+  width: 55px;
+  float: right;
+}
+body.page-node-17 #webform-ajax-wrapper-17 {
+  float: left;
+  width: 480px;
+}
+body.page-node-17 #webform-ajax-wrapper-17 .messages {
+  width: 400px;
+  border: 0 !important;
+  padding: 5px 17px;
+}
+body.page-node-17 #webform-ajax-wrapper-17 .ajax-progress {
+  float: left;
+}
+body.page-node-17 #webform-ajax-wrapper-17 .text {
+  text-align: center;
+}
+body.page-node-17 #webform-ajax-wrapper-17 .links {
+  display: none;
+}
+body.page-node-17 #webform-ajax-wrapper-17 h2 {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+body.page-node-17 #webform-ajax-wrapper-17 h3 {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+body.page-node-17 #block-system-main {
+  float: left;
+  padding: 0 0 0 17px;
+}
+#block-menu-menu-orcamento {
+  width: 287px;
+  float: left;
+  border-right: 1px solid #9a9c9f;
+  padding-right: 16px;
+  min-height: 510px;
+}
+#block-menu-menu-orcamento .menu {
+  padding: 0;
+  margin: 0;
+}
+#block-menu-menu-orcamento .menu li {
+  background: url(/sites/all/themes/therapeutica/images/menu-orcamento.png) 0 0;
+  height: 40px;
+  width: 273px;
+  display: block;
+  list-style: none;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: #934631;
+  text-transform: uppercase;
+  line-height: 40px;
+  padding: 0 0 0 13px;
+  margin: 0 0 4px 0;
+  cursor: pointer;
+}
+#block-menu-menu-orcamento .menu li a {
+  cursor: pointer;
+  color: #934631;
+  text-decoration: none;
+}
+#block-menu-menu-orcamento .menu li a.active {
+  color: #efce9e;
+}
+#block-menu-menu-orcamento .menu li.active-trail,
+#block-menu-menu-orcamento .menu li:hover {
+  background-position: 0 bottom;
+}
+#block-menu-menu-orcamento .menu li.active-trail a,
+#block-menu-menu-orcamento .menu li:hover a {
+  color: #efce9e;
+}
+body.page-dra-tania-responde .left-block,
+body.page-node-20 .left-block {
+  float: left;
+  width: 289px;
+}
+body.page-dra-tania-responde .left-block img,
+body.page-node-20 .left-block img {
+  border: 1px solid #934631;
+}
+body.page-dra-tania-responde .left-block h2,
+body.page-node-20 .left-block h2 {
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  color: #934631;
+  margin: 15px 0 0;
+}
+body.page-dra-tania-responde .left-block #cargo,
+body.page-node-20 .left-block #cargo {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 11px;
+  color: #934631;
+}
+body.page-dra-tania-responde .left-block #registro,
+body.page-node-20 .left-block #registro {
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  color: #934631;
+  line-height: 18px;
+}
+body.page-dra-tania-responde .region-content {
+  overflow: hidden;
+  padding: 0 0 30px;
+}
+body.page-dra-tania-responde #block-system-main {
+  border-left: 1px solid #9a9c9f;
+  width: 650px;
+  float: left;
+  padding: 0 0 0 30px;
+}
+body.page-dra-tania-responde #block-system-main .views-row {
+  border-top: 1px solid #9a9c9f;
+  padding: 25px 0 10px;
+}
+body.page-dra-tania-responde #block-system-main .views-row.views-row-first {
+  border-top: 0;
+}
+body.page-dra-tania-responde #block-system-main .field-content,
+body.page-dra-tania-responde #block-system-main .views-label {
+  font-family: "Open Sans", Calibri, Verdana, Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+body.page-dra-tania-responde #block-system-main .views-label {
+  font-weight: bold;
+}
+body.page-dra-tania-responde #block-system-main .views-field-body {
+  margin-top: 16px;
+}
+body.page-dra-tania-responde #block-system-main .views-field-body .field-content p:first-child {
+  margin-top: 0;
+}

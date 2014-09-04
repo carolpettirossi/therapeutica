@@ -1,0 +1,128 @@
+/*Colors*/
+/**/
+/*Fonts*/
+.paralelogramo {
+  width: 209px;
+  height: 242px;
+  -webkit-transform: skew(-24deg);
+  -moz-transform: skew(-24deg);
+  -ms-transform: skew(-24deg);
+  -o-transform: skew(-24deg);
+  transform: skew(-24deg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 54px;
+}
+.title {
+  background: url(/sites/all/themes/therapeutica/images/title_bkg.png) center center no-repeat;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: #efce9e;
+  text-transform: uppercase;
+  width: 968px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+body.front h1 {
+  display: none;
+}
+body.front #node-page-back {
+  display: none;
+}
+body.front .block-orcamento {
+  display: inline-block;
+  margin: 40px 0;
+}
+body.front .block-orcamento h2 {
+  background: url(/sites/all/themes/therapeutica/images/title_bkg.png) center center no-repeat;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: #efce9e;
+  text-transform: uppercase;
+  width: 968px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+body.front .block-orcamento h3 {
+  color: #4c4c4c;
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 163px;
+  margin: 8px auto 0 auto;
+}
+body.front .block-orcamento .content {
+  width: 725px;
+  margin: 0 auto;
+}
+body.front .block-orcamento .item {
+  float: left;
+  text-align: center;
+}
+body.front .block-orcamento .item#online {
+  margin: 0 115px;
+}
+body.front .block-orcamento .item#online h3 {
+  width: 105px;
+}
+body.front #block-views-especialidades-block {
+  position: relative;
+}
+body.front #block-views-especialidades-block h2 {
+  display: none;
+}
+body.front #block-views-especialidades-block .view-especialidades {
+  position: relative;
+  overflow: hidden;
+}
+body.front #block-views-especialidades-block .view-especialidades .view-content {
+  width: 20000em;
+  position: relative;
+}
+body.front #block-views-especialidades-block .view-especialidades .view-content .views-row {
+  float: left;
+  position: relative;
+  width: 216px;
+}
+body.front #block-views-especialidades-block .view-especialidades .view-content .views-row.views-row-last {
+  width: 317px;
+}
+body.front #block-views-especialidades-block .view-especialidades .view-content .views-row .views-field-view-node a {
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 100%;
+}
+body.front #block-views-especialidades-block .jcarousel-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: url(/sites/all/themes/therapeutica/images/prev.png) no-repeat;
+  height: 43px;
+  width: 43px;
+  text-indent: -9999px;
+  display: block;
+}
+body.front #block-views-especialidades-block .jcarousel-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: url(/sites/all/themes/therapeutica/images/next.png) no-repeat;
+  height: 43px;
+  width: 43px;
+  text-indent: -9999px;
+  display: block;
+}
